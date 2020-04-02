@@ -1,25 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import LandingPage from "./LandingPage.js";
+import styled, { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+  :root {
+    --space-eighth: 2px;
+    --space-quarter: 4px;
+    --space-half: 8px;
+    --space-one: 16px;
+    --space-one-and-half: 24px;
+    --space-two: 32px;
+    --space-three: 48px;
+    --space-four: 64px;
+  }
+  
+  body {
+    box-sizing: border-box;
+  }
+`;
+
+const Root = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Root>
+      <GlobalStyle />
+      <LandingPage />
+    </Root>
   );
 }
 
