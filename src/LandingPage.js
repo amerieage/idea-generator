@@ -1,21 +1,7 @@
 import React from "react"
-import Banner from "./Banner"
 import Space from "./Space"
 import Button from "@material-ui/core/Button"
-
-const Footer = () => (
-  <div
-    style={{
-      position: "absolute",
-      bottom: 0,
-      width: "100%",
-      maxHeight: "80px",
-      overflow: "hidden"
-    }}
-  >
-    <Banner />
-  </div>
-)
+import { Link } from "react-router-dom"
 
 const Definition = () => {
   return (
@@ -26,7 +12,7 @@ const Definition = () => {
           style={{
             border: "1px solid rgba(0,0,0,.2)",
             padding: 24,
-            borderRadius: 8
+            borderRadius: 8,
           }}
         >
           <h1 style={{ marginBottom: 0 }}>bored</h1>
@@ -48,12 +34,12 @@ const Description = () => {
       style={{
         display: "flex",
         justifyContent: "center",
-        padding: 12
+        padding: 12,
       }}
     >
       <div
         style={{
-          width: 580
+          width: 580,
         }}
       >
         <p style={{ textAlign: "center" }}>
@@ -73,12 +59,14 @@ const TryMe = () => (
   <div
     style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
   >
-    <Button
-      variant="outlined"
-      style={{ color: "#5D484C", backgroundColor: "#FFC5CF" }}
-    >
-      Click Here
-    </Button>
+    <Link to="/main">
+      <Button
+        variant="outlined"
+        style={{ color: "#5D484C", backgroundColor: "#FFC5CF" }}
+      >
+        Click Here
+      </Button>
+    </Link>
   </div>
 )
 
@@ -88,7 +76,6 @@ const LandingPage = () => {
       <Definition />
       <Description />
       <TryMe />
-      <Footer />
     </div>
   )
 }
