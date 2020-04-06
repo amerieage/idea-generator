@@ -44,6 +44,14 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <p style={{ position: "fixed", bottom: 72, right: 16 }}>
+        made with{" "}
+        <span role="img" aria-label="cool">
+          {" "}
+          😎
+        </span>{" "}
+        by amerie{" "}
+      </p>
 
       <Footer />
     </Root>
