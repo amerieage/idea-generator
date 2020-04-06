@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Space from "./Space"
 import Button from "@material-ui/core/Button"
 import ideas from "./ideas"
+import { Link } from "react-router-dom"
 
 const Root = styled.div`
   flex: 1;
@@ -51,8 +52,13 @@ const MainPage = () => {
   return (
     <Root>
       <Space direction="y" value="two" />
-
-      <em> Idea Generator </em>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <Link to="/" style={{ width: 72 }}>
+          back
+        </Link>
+        <em> Idea Generator </em>
+        <div style={{ width: 72, height: 1 }} />
+      </div>
 
       <h1 style={{ marginTop: 0, fontSize: 50, marginBottom: 0 }}>
         You Should....
