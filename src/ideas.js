@@ -35,12 +35,12 @@ export default [
     link: "https://sketch.io/sketchpad/",
     image: (
       <iframe
-        src="https://giphy.com/embed/LqTfMVhT0Jcuk"
+        src="https://giphy.com/embed/vZqughbxxFLi"
         width="480"
-        height="354"
+        height="359"
         frameBorder="0"
         class="giphy-embed"
-        title="Draw a Picture"
+        title="draw a picture"
         allowFullScreen
       ></iframe>
     ),
@@ -50,12 +50,12 @@ export default [
       "Solve a puzzle. A rubix cube?! A word search!? The possibilities are endless!!!11!!1",
     image: (
       <iframe
-        src="https://giphy.com/embed/rq7LNwzJGNY3u"
+        src="https://giphy.com/embed/JWF7fOo3XyLgA"
         width="480"
-        height="270"
+        height="268"
         frameBorder="0"
         class="giphy-embed"
-        title="Solve a Puzzle"
+        title="solve a puzzle"
         allowFullScreen
       ></iframe>
     ),
@@ -95,7 +95,7 @@ export default [
     link: "https://soundcloud.com/",
     image: (
       <iframe
-        src="https://giphy.com/embed/7idyJ1UbjIrUk"
+        src="https://giphy.com/embed/3ohzdNUz4Syuw8Qc1O"
         height={giphyHeight}
         frameBorder="0"
         class="giphy-embed"
@@ -109,7 +109,7 @@ export default [
     link: "https://www.instagram.com/",
     image: (
       <iframe
-        src="https://giphy.com/embed/5ztkkRs70s70A"
+        src="https://giphy.com/embed/3CEsnQWHuUryo"
         width="480"
         height="299"
         frameBorder="0"
@@ -258,7 +258,7 @@ export default [
     image: (
       <>
         <iframe
-          src="https://giphy.com/embed/1IBUZ2KEJBqXC"
+          src="https://giphy.com/embed/ewelN8qzxQqNG"
           height={giphyHeight}
           frameBorder="0"
           class="giphy-embed"
@@ -269,7 +269,7 @@ export default [
     ),
   },
   {
-    message: "Call a friend",
+    message: "Call a friend.",
     image: (
       <>
         <iframe
@@ -300,3 +300,4 @@ export default [
     ),
   },
 ]
+
